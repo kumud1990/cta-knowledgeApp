@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "domains": [
+    "system_landscape",
+    "data_model",
+    "integration_identity",
+    "security_sharing",
+    "alm",
+    "risk_tradeoffs"
+  ],
+  "metaDimensions": [
+    "breadth",
+    "depth",
+    "communication",
+    "adaptability"
+  ],
+  "attempts": []
+}
