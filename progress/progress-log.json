@@ -14,5 +14,43 @@
     "communication",
     "adaptability"
   ],
-  "attempts": []
+  "attempts": [
+    {
+      "id": "united-bank-1",
+      "mock": "united-bank",
+      "date": "2026-09-23",
+      "attemptNumber": 1,
+      "scope": "First 35 minutes only (full presentation + Q&A through the Apex-trigger question); post-35-min panel feedback excluded.",
+      "solutionFile": "solutions/United Bank/solution united bank.docx",
+      "judgmentFile": "solutions/United Bank/attempt-1-judgment.md",
+      "examScorePercent": 54,
+      "passingBarPercent": 67,
+      "passed": false,
+      "domainScores": {
+        "system_landscape": 3,
+        "data_model": 3,
+        "integration_identity": 3,
+        "security_sharing": 3,
+        "alm": 1,
+        "risk_tradeoffs": 2
+      },
+      "metaScores": {
+        "breadth": 4,
+        "depth": 3,
+        "communication": 3,
+        "adaptability": 3
+      },
+      "overallVerdict": "Developing",
+      "strengths": [
+        "SSN searchability trap handled correctly: separate last-4-digit searchable field with encrypted field behind it.",
+        "IDP-vs-SP SSO defended credibly under follow-up (OKTA app-tile IDP-initiated; acknowledged SP-initiated also valid).",
+        "Full-breadth solution delivered inside the 30-minute presentation box."
+      ],
+      "gaps": [
+        "ALM/governance essentially absent beyond internationalization (no sandbox/CI/CD/testing/release strategy).",
+        "Risk/trade-offs reactive: decisions stated, not defended with rejected alternatives and risks up front.",
+        "Two shaky Q&A justifications: Marketing Cloud 'cleans leads' (not a real MC capability) and Apex-for-5-applicants ('more scalable than flow')."
+      ]
+    }
+  ]
 }
